@@ -10,6 +10,18 @@ def get_connection():
         password="postgres",
     )
 
-def insert_data(data):
-    ...
 
+def insert_data(data):
+    conn = get_connection()
+    cur = conn.cursor()
+    query = '''
+    INSERT INTO "profiles"
+        (user_id, first_name, last_name, middle_name, birth_date, gender, bio, country, city, language)
+    VALUES
+        (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    '''
+
+    cur.execute(query, data)
+    conn.commit()
+    cur.close()
+    conn.close()
