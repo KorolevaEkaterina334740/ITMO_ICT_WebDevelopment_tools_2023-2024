@@ -22,7 +22,7 @@ class Gender(str, Enum):
 
 class Profile(Base):
     user_id: Mapped[int] = mapped_column(
-        ForeignKey('users.id', ondelete='CASCADE'), unique=True
+        ForeignKey('users.id', ondelete='CASCADE'),
     )
     first_name: Mapped[str] = mapped_column(String(32))
     last_name: Mapped[str] = mapped_column(String(32))
