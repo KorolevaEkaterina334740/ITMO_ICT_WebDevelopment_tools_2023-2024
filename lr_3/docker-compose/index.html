@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../jwt/">
+        <link rel="prev" href="../dockerfile/">
       
       
-        <link rel="next" href="../user/">
+        <link rel="next" href="../celery/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
-        <title>Хеширование паролей - Документация</title>
+        <title>Docker-compose - Документация</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bcrypt" class="md-skip">
+        <a href="#docker-compose" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Документация" class="md-header__button md-logo" aria-label="Документация" data-md-component="logo">
+    <a href="../.." title="Документация" class="md-header__button md-logo" aria-label="Документация" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Хеширование паролей
+              Docker-compose
             
           </span>
         </div>
@@ -173,7 +173,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Документация" class="md-nav__button md-logo" aria-label="Документация" data-md-component="logo">
+    <a href="../.." title="Документация" class="md-nav__button md-logo" aria-label="Документация" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -191,7 +191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -208,19 +208,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -234,7 +232,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Лабораторная работа №1
@@ -283,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../description/theme/" class="md-nav__link">
+      <a href="../../lr_1/description/theme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -304,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../description/objectives/" class="md-nav__link">
+      <a href="../../lr_1/description/objectives/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -368,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/profiles/" class="md-nav__link">
+      <a href="../../lr_1/features/profiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/trips/" class="md-nav__link">
+      <a href="../../lr_1/features/trips/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -410,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/find/" class="md-nav__link">
+      <a href="../../lr_1/features/find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -431,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/manage/" class="md-nav__link">
+      <a href="../../lr_1/features/manage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/schema/" class="md-nav__link">
+      <a href="../../lr_1/database/schema/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,19 +519,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -547,7 +543,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Функционал на 15 баллов
@@ -561,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../auth/" class="md-nav__link">
+      <a href="../../lr_1/advanced_features/auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -582,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jwt/" class="md-nav__link">
+      <a href="../../lr_1/advanced_features/jwt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,30 +596,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Хеширование паролей
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../lr_1/advanced_features/hash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -632,131 +608,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Введение
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Хеширование пароля
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Хеширование пароля">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hash_password" class="md-nav__link">
-    <span class="md-ellipsis">
-      Функция hash_password
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Функция hash_password">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Процесс:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример кода:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Валидация пароля
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Валидация пароля">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#validate_password" class="md-nav__link">
-    <span class="md-ellipsis">
-      Функция validate_password
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Функция validate_password">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Процесс:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример кода:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -769,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user/" class="md-nav__link">
+      <a href="../../lr_1/advanced_features/user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lr_2/task_1/" class="md-nav__link">
+      <a href="../../lr_2/task_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lr_2/task_2/" class="md-nav__link">
+      <a href="../../lr_2/task_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -886,17 +737,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -910,7 +763,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Лабораторная работа №3
@@ -924,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lr_3/dockerfile/" class="md-nav__link">
+      <a href="../dockerfile/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,10 +795,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../lr_3/docker-compose/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Docker-compose
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -954,6 +827,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Объяснение
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -966,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lr_3/celery/" class="md-nav__link">
+      <a href="../celery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1016,105 +918,9 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Введение
+      Объяснение
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Хеширование пароля
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Хеширование пароля">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hash_password" class="md-nav__link">
-    <span class="md-ellipsis">
-      Функция hash_password
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Функция hash_password">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Процесс:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример кода:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Валидация пароля
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Валидация пароля">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#validate_password" class="md-nav__link">
-    <span class="md-ellipsis">
-      Функция validate_password
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Функция validate_password">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Процесс:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример кода:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1133,69 +939,99 @@
                   
 
 
-<h1 id="bcrypt">Механизм хеширования паролей с использованием bcrypt</h1>
-<h2 id="_1">Введение</h2>
-<p>Для обеспечения безопасности пользовательских данных, важно надежно хранить пароли. В нашем
-веб-приложении для этой цели используется библиотека <code>bcrypt</code>, которая позволяет надежно хешировать
-и проверять пароли.</p>
-<h2 id="_2">Хеширование пароля</h2>
-<h3 id="hash_password">Функция <code>hash_password</code></h3>
-<ul>
-<li>
-<p><strong>Аргументы:</strong></p>
-<ul>
-<li><code>password</code> (str): Пароль, который необходимо захешировать.</li>
-</ul>
-</li>
-<li>
-<p><strong>Возвращает:</strong></p>
-<ul>
-<li>Захешированный пароль в формате строки.</li>
-</ul>
-</li>
-</ul>
-<h4 id="_3">Процесс:</h4>
-<ol>
-<li><strong>Кодирование пароля:</strong> Перед хешированием пароль преобразуется в байты.</li>
-<li><strong>Генерация соли:</strong> <code>bcrypt.gensalt()</code> генерирует уникальную "соль" для каждого хеширования, что
-   делает каждый хеш уникальным даже для одинаковых паролей.</li>
-<li><strong>Хеширование пароля с солью:</strong> Соль добавляется к паролю, и результат хешируется.</li>
-<li><strong>Возврат хеша:</strong> Хеш возвращается в декодированном виде, чтобы его можно было сохранить в базе
-   данных.</li>
-</ol>
-<h4 id="_4">Пример кода:</h4>
-<pre><code class="language-python">def hash_password(password: str) -&gt; str:
-    return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+<h1 id="docker-compose">Docker Compose</h1>
+<p>Docker Compose — это инструмент для определения и запуска многоконтейнерных приложений Docker. Он позволяет описывать сервисы,
+сети и тома, необходимые для приложения, в единственном файле <code>docker-compose.yml</code>. Docker Compose упрощает процесс
+развертывания и управления приложениями, состоящими из нескольких контейнеров.</p>
+<h2 id="_1">Объяснение</h2>
+<pre><code class="language-yaml">version: &quot;3.4&quot;
 </code></pre>
-<h2 id="_5">Валидация пароля</h2>
-<h3 id="validate_password">Функция <code>validate_password</code></h3>
 <ul>
-<li>
-<p><strong>Аргументы:</strong></p>
-<ul>
-<li><code>password</code> (str): Пароль, введенный пользователем.</li>
-<li><code>hashed_password</code> (str): Хешированный пароль, сохраненный в базе данных.</li>
+<li>Указывает версию синтаксиса Docker Compose. Версия 3.4 обеспечивает совместимость с большинством функций.</li>
 </ul>
-</li>
-<li>
-<p><strong>Возвращает:</strong></p>
-<ul>
-<li><code>True</code>, если хеши совпадают.</li>
-<li><code>False</code>, если хеши не совпадают.</li>
-</ul>
-</li>
-</ul>
-<h4 id="_6">Процесс:</h4>
-<ol>
-<li><strong>Кодирование введенного пароля:</strong> Введенный пароль кодируется в байты.</li>
-<li><strong>Сравнение с хешированным паролем:</strong> Используя функцию <code>bcrypt.checkpw</code>, введенный пароль
-   сравнивается с сохраненным хешированным паролем.</li>
-<li><strong>Возврат результата:</strong> Возвращает <code>True</code>, если хеши совпадают, иначе <code>False</code>.</li>
-</ol>
-<h4 id="_7">Пример кода:</h4>
-<pre><code class="language-python">def validate_password(password: str, hashed_password: str) -&gt; bool:
-    return bcrypt.checkpw(password.encode(), hashed_password.encode())
+<pre><code class="language-yaml">services:
 </code></pre>
+<ul>
+<li>Определяет сервисы, составляющие приложение.</li>
+</ul>
+<pre><code class="language-yaml">  database:
+    container_name: database
+    image: postgres:14.1-alpine
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    env_file:
+      - .env
+    ports:
+      - &quot;5432:5432&quot;
+</code></pre>
+<ul>
+<li>Сервис базы данных PostgreSQL.</li>
+<li>Использует образ <code>postgres:14.1-alpine</code>.</li>
+<li>Определяет переменные окружения для конфигурации базы данных, получая значения из файла <code>.env</code>.</li>
+<li>Монтирует именованный том <code>db_data</code> для сохранения данных базы данных.</li>
+<li>Проксирует порт 5432 контейнера на порт 5432 хоста.</li>
+</ul>
+<pre><code class="language-yaml">  redis:
+    container_name: redis
+    image: redis:7.2.4
+    ports:
+      - &quot;6379:6379&quot;
+</code></pre>
+<ul>
+<li>Сервис Redis.</li>
+<li>Использует образ <code>redis:7.2.4</code>.</li>
+<li>Проксирует порт 6379 контейнера на порт 6379 хоста.</li>
+</ul>
+<pre><code class="language-yaml">  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python -m uvicorn main:app --host 0.0.0.0 --port 8000
+    ports:
+      - &quot;8000:8000&quot;
+    env_file:
+      - .env
+    depends_on:
+      - database
+      - redis
+</code></pre>
+<ul>
+<li>Сервис веб-приложения.</li>
+<li>Собирает образ из Dockerfile в текущей директории.</li>
+<li>Запускает команду <code>python -m uvicorn main:app --host 0.0.0.0 --port 8000</code> для запуска приложения.</li>
+<li>Проксирует порт 8000 контейнера на порт 8000 хоста.</li>
+<li>Загружает переменные окружения из файла <code>.env</code>.</li>
+<li>Зависит от сервисов <code>database</code> и <code>redis</code>, гарантируя, что они будут запущены перед <code>app</code>.</li>
+</ul>
+<pre><code class="language-yaml">  celery_worker:
+    container_name: celery_worker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python -m celery -A celery_worker.app worker
+    env_file:
+      - .env
+    depends_on:
+      - app
+</code></pre>
+<ul>
+<li>Сервис воркера Celery.</li>
+<li>Собирает образ из Dockerfile в текущей директории.</li>
+<li>Запускает команду <code>python -m celery -A celery_worker.app worker</code> для запуска воркера Celery.</li>
+<li>Загружает переменные окружения из файла <code>.env</code>.</li>
+<li>Зависит от сервиса <code>app</code>, гарантируя, что <code>app</code> будет запущен перед <code>celery_worker</code>.</li>
+</ul>
+<pre><code class="language-yaml">volumes:
+  db_data:
+</code></pre>
+<ul>
+<li>Определяет именованный том <code>db_data</code> для хранения данных базы данных.</li>
+</ul>
 
 
 
@@ -1242,10 +1078,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>
